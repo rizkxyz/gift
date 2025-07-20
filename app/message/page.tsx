@@ -7,7 +7,7 @@ export default function BirthdayMessage() {
   const [displayedText, setDisplayedText] = useState("")
   const [isComplete, setIsComplete] = useState(false)
 
-  const fullMessage = `Muti,
+  const fullMessage = `Hai Mut,
 
 Hari ini jadi hari yang beda dari biasanya, soalnya ada satu orang spesial yang bertambah usianya — dan itu kamu! Dunia ini beruntung banget pernah punya orang sebaik dan seindah kamu di dalamnya.
 
