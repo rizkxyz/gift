@@ -78,8 +78,8 @@ export default function GalleryPage() {
   const photos: Photo[] = [
     { type: "image", src: "/img/gallery/foto1.jpg", alt: "MUTIMUTIMUTI" },
     { type: "image", src: "/img/gallery/foto2.jpg", alt: "IMUTIMUTIMUT" },
-    { type: "image", src: "/img/gallery/foto3.jpg", alt: "INSANE LIGHTING" },
-    { type: "image", src: "/img/gallery/foto4.jpg", alt: "MY FAV" },
+    { type: "image", src: "/img/gallery/foto3.jpg", alt: "YOU ARE" },
+    { type: "image", src: "/img/gallery/foto4.jpg", alt: "MY EVERYTHING" },
     { type: "video", src: "/videos/clip.mp4", alt: "Random Clip" },
   ]
 
@@ -264,7 +264,7 @@ export default function GalleryPage() {
                     ×
                   </button>
                   <div className="bg-black rounded-lg shadow-2xl border-4 border-yellow-300 overflow-hidden flex flex-col">
-                    <div className="p-2 bg-gray-800 text-yellow-300 text-center text-sm retro-text">Birthday Video</div>
+                    <div className="p-2 bg-gray-800 text-yellow-300 text-center text-sm retro-text">Random Memory</div>
                     <div className="w-[280px] md:w-[320px] flex items-center justify-center bg-black">
                       <video controls autoPlay playsInline className="w-full">
                         <source src={photos[4].src} type="video/mp4" />

@@ -18,9 +18,9 @@ export default function MusicPage() {
   const audioRef = useRef<HTMLAudioElement>(null)
 
   const songs: Song[] = [
-    { title: "Best Part", artist: "Daniel Casesar", src: "/music/lagu1.mp3", duration: "3:31" },
+    { title: "Wildflower", artist: "yung kai", src: "/music/lagu1.mp3", duration: "2:55" },
     { title: "Until I Found You", artist: "Stephen Sanchez", src: "/music/lagu2.mp3", duration: "2:58" },
-    { title: "Butterflies", artist: "Kacey Musgraves", src: "/music/lagu3.mp3", duration: "3:40" },
+    { title: "Best Part", artist: "Daniel Caesar", src: "/music/lagu3.mp3", duration: "3:31" },
   ]
 
   const togglePlay = () => {

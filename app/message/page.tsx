@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 
 export default function BirthdayMessage() {
@@ -9,34 +9,39 @@ export default function BirthdayMessage() {
 
   const fullMessage = `Hai Mut,
 
-Hari ini jadi hari yang beda dari biasanya, soalnya ada satu orang spesial yang bertambah usianya — dan itu kamu! Dunia ini beruntung banget pernah punya orang sebaik dan seindah kamu di dalamnya.
+Kamu tau ga sih hari ini jadi hari yang beda dari biasanya, soalnya ada satu orang spesial yang bertambah usianya — dan itu kamu!! Dunia ini beruntung banget pernah punya orang sebaik dan seindah kamu di dalamnya.
 
-Semoga hari ini kamu bisa ngerasain semua hal seru, lucu, dan positif yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginanmu, bahkan yang absurd sekalipun tercapai,  soalnya kamu layak mendapatkan apapun di dunia ini! 
+Semoga di hari yang spesial ini kamu bisa ngerasain semua hal seru, lucu, dan positif yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginanmu, bahkan yang absurd sekalipun tercapai,  soalnya kamu layak mendapatkan apapun di dunia ini! 
 
 Aku seneng banget bisa liat kamu terus berkembang, dari yang kadang nyebelin banget kalo lagi baper, tapi di saat yang sama bisa bikin aku senyum salting terus sampe tahun depan. Makasih udah jadi temen curhat, partner in crime, dan jadi alasan aku terus berkembang tiap hari. 
+
 Semoga tahun ini kamu makin keren, makin banyak momen bahagia, dan makin disayang, bukan cuma sama aku tapi sama semuanya di dunia ini. Jangan lupa, kita bakal terus jalan, ngejar mimpi, dan ngelewatin segala drama hidup bareng2.
 
 Happy Birthdaayy Mutii!!!
 love u so muchhh!`
 
-  useEffect(() => {
-    if (isComplete) {
-      setDisplayedText(fullMessage)
-    } else {
-      let currentIndex = 0
-      const typewriterInterval = setInterval(() => {
-        if (currentIndex < fullMessage.length) {
-          setDisplayedText((prev) => prev + fullMessage.charAt(currentIndex))
-          currentIndex++
-        } else {
-          clearInterval(typewriterInterval)
-          setIsComplete(true)
-        }
-      }, 50)
+onst currentIndex = useRef(0)
+useEffect(() => {
 
-      return () => clearInterval(typewriterInterval)
+  if (isComplete) {
+    setDisplayedText(fullMessage)
+    return
+  }
+
+  const interval = setInterval(() => {
+    if (currentIndex.current < fullMessage.length) {
+      const nextChar = fullMessage.charAt(currentIndex.current)
+
+      setDisplayedText((prev) => prev + nextChar)
+      currentIndex.current += 1
+    } else {
+      clearInterval(interval)
+      setIsComplete(true)
     }
-  }, [isComplete])
+  }, 35)
+
+  return () => clearInterval(interval)
+}, [isComplete])
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-indigo-500 to-purple-600 p-2 sm:p-4 flex items-center justify-center">
