@@ -7,18 +7,15 @@ export default function BirthdayMessage() {
   const [displayedText, setDisplayedText] = useState("")
   const [isComplete, setIsComplete] = useState(false)
 
-  const fullMessage = `Hai Mut,
+  const fullMessage = `Happy Birthday Mutii!!!!
 
-Kamu tau ga sih hari ini jadi hari yang beda dari biasanya, soalnya ada satu orang spesial yang bertambah usianya — dan itu kamu!! Dunia ini beruntung banget pernah punya orang sebaik dan seindah kamu di dalamnya.
+Semoga dengan bertambahnya umur ini kamu makin pinter, makin dewasa, makin keren, yaa pokoknya jadi diri kamu yang lebih baik lah dari yang sebelumnya. Semoga apapun yang jadi cita-cita kamu, entah itu tentang kampus, karir, keluarga, atau apapun itu bisa tercapai yaa.
 
-Semoga di hari yang spesial ini kamu bisa ngerasain semua hal seru, lucu, dan positif yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginanmu, bahkan yang absurd sekalipun tercapai,  soalnya kamu layak mendapatkan apapun di dunia ini! 
+Aku bersyukur banget bisa kenal orang seindah dan sebaik kamu. Makasih ya udah jadi temen curhat, partner in crime, dan seseorang yang bisa memotivasi aku buat terus berkembang. Jangan lupa kita bakal terus jalan dan mengejar mimpi kita bareng2.
 
-Aku seneng banget bisa liat kamu terus berkembang, dari yang kadang nyebelin banget kalo lagi baper, tapi di saat yang sama bisa bikin aku senyum salting terus sampe tahun depan. Makasih udah jadi temen curhat, partner in crime, dan jadi alasan aku terus berkembang tiap hari. 
-
-Semoga tahun ini kamu makin keren, makin banyak momen bahagia, dan makin disayang, bukan cuma sama aku tapi sama semuanya di dunia ini. Jangan lupa, kita bakal terus jalan, ngejar mimpi, dan ngelewatin segala drama hidup bareng2.
-
-Happy Birthdaayy Mutii!!!
-love u so muchhh!`
+Sekali lagi,
+Happy Birthday Mutii!!!
+Love u a lot`
 
 const currentIndex = useRef(0)
 useEffect(() => {
