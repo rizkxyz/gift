@@ -450,7 +450,6 @@ export default function TetrisGame() {
               <p>walaupun kamu kalah,</p>
               <p>tapi kamu selalu menang</p>
               <p>kok di hati aku, hehe ^_^</p>
-              <p className="text-pink-400 text-xl sm:text-2xl mt-6 sm:mt-8">LOVE YOU {"<3"}</p>
             </div>
             <div className="flex justify-center mt-4 sm:mt-6">
               <button
