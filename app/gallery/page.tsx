@@ -76,10 +76,10 @@ export default function GalleryPage() {
   const animationRef = useRef<number | null>(null)
 
   const photos: Photo[] = [
-    { type: "image", src: "/img/gallery/foto1.jpg", alt: "MUTIMUTIMUTI" },
-    { type: "image", src: "/img/gallery/foto2.jpg", alt: "IMUTIMUTIMUT" },
-    { type: "image", src: "/img/gallery/foto3.jpg", alt: "YOU ARE" },
-    { type: "image", src: "/img/gallery/foto4.jpg", alt: "MY EVERYTHING" },
+    { type: "image", src: "/img/gallery/foto1.jpg", alt: "#1" },
+    { type: "image", src: "/img/gallery/foto2.jpg", alt: "#2" },
+    { type: "image", src: "/img/gallery/foto3.jpg", alt: "#3" },
+    { type: "image", src: "/img/gallery/foto4.jpg", alt: "#4" },
     { type: "video", src: "/videos/clip.mp4", alt: "Random Clip" },
   ]
 
