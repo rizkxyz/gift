@@ -10,9 +10,9 @@ const pressStart2P = Press_Start_2P({
 })
 
 export const metadata: Metadata = {
-  title: "Retro Birthday Gift",
-  description: "A retro 90s style digital birthday gift",
-    generator: 'v0.dev'
+  title: "Birthday Gift",
+  description: "A retro 90s style nintendo gameboy birthday gift",
+    generator: 'rizkxyz'
 }
 
 export default function RootLayout({
