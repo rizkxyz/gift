@@ -20,7 +20,7 @@ Semoga tahun ini kamu makin keren, makin banyak momen bahagia, dan makin disayan
 Happy Birthdaayy Mutii!!!
 love u so muchhh!`
 
-onst currentIndex = useRef(0)
+const currentIndex = useRef(0)
 useEffect(() => {
 
   if (isComplete) {
